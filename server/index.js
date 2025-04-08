@@ -26,9 +26,9 @@ app.post("/create_preference", async (req, res) => {
                 currency_id: "ARS"
             }],
             back_urls: {
-                success:"http://127.0.0.1:5500/client/carrito.html?success=true",
-                failure:"http://127.0.0.1:5500/client/carrito.html?failure=true",
-                pending:"http://127.0.0.1:5500/client/carrito.html?pending=true"
+                success:"https://nererusso.github.io/faerie-soerie/carrito.html?success=true",
+                failure:"https://nererusso.github.io/faerie-soerie/carrito.html?failure=true",
+                pending:"https://nererusso.github.io/faerie-soerie/carrito.html?pending=true"
             },
             auto_return: "approved",
         };
