@@ -65,7 +65,7 @@ document.getElementById("pagar").addEventListener("click", async () => {
       price: totalPagar,
     };
 
-    const response = await fetch("http://localhost:3000/create_preference", {
+    const response = await fetch("https://server-faerie.onrender.com/create_preference", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
