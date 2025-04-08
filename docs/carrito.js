@@ -72,9 +72,14 @@ document.getElementById("pagar").addEventListener("click", async () => {
       },
       body: JSON.stringify(orderData),
     });
-
+    
+    if (!response.ok) {
+      throw new Error("No se pudo crear la preferencia");
+    }
+    
     const preference = await response.json();
     createCheckoutButton(preference.id);
+    
 
   } catch (error) {
     alert("error :(");
