@@ -1,3 +1,15 @@
+//Header scroll
+window.addEventListener('scroll', () => {
+    const header = document.getElementById('cabecera');
+    const scrollPos = window.scrollY;
+
+    if (scrollPos > 50) { //ajusta si quieres que se active más abajo o arriba
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
 //Carusel
 let items = document.querySelectorAll('.carousel .carousel-item')
 
