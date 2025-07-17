@@ -172,8 +172,8 @@ header.scrolled #nave ul li a {
 
 #video_promocion video{
     margin-top: 2em;
-    padding-left: 9em;
-    padding-right: 9em;
+    padding-left: 12em;
+    padding-right: 12em;
     width: 100%;
     height: auto;
     
@@ -299,7 +299,7 @@ header.scrolled #nave ul li a {
 }
 
 .gusto_fondo {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #1d3b1bee;
     padding-top: 1em;
     margin-left: 14em;
     margin-right: 14em;
@@ -376,7 +376,7 @@ footer ul li a svg path{
 
 .melanie_fondo {
     justify-self: center;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #1d3b1bee;
     padding-top: 1em;
     margin-left: 14em;
     margin-right: 14em;
@@ -386,7 +386,7 @@ footer ul li a svg path{
 
 .portals_fondo {
     justify-self: center;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #1d3b1bee;
     padding-top: 1em;
     margin-left: 14em;
     margin-right: 14em;
