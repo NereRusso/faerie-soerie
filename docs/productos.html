@@ -12,7 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Alike&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -24,24 +25,28 @@
         class="numerito">0</span></a>
   </section>
 
-  <header id="cabecera" class="d-flex flex-wrap sticky-top py-4">
-        <a href="#" class="d-flex align-items-center ms-4 mb-3 mb-md-0 link-body-emphasis text-decoration-none">
-            <h1 id="logo">Logo</h1>
-        </a>
-        <a href="#" class="d-flexmb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-            <h1 id="titulo">Faerie Soiree</h1>
-        </a>
+  <section>
+    <a href="#" id="btnSubir"><i class="bi bi-arrow-up"></i></a>
+  </section>
+
+  <header id="cabecera" class="d-flex flex-wrap py-4">
+    <a href="#" class="d-flex align-items-center ms-4 mb-3 mb-md-0 link-body-emphasis text-decoration-none">
+      <h1 id="logo">Logo</h1>
+    </a>
+    <a href="#" class="d-flexmb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <h1 id="titulo">Faerie Soiree</h1>
+    </a>
 
 
-        <nav id="nave">
-            <ul class="nav me-4">
-                <li class="nav-item"><a href="index.html" class="nav-link fs-5">INICIO</a></li>
-                <li class="nav-item"><a href="#" class="nav-link fs-5">PRODUCTOS</a></li>
-                <li class="nav-item"><a href="nosotros.html" class="nav-link fs-5">MELANIE MARTINEZ</a></li>
-                <li class="nav-item"><a href="contacto.html" class="nav-link fs-5">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav id="nave">
+      <ul class="nav me-4">
+        <li class="nav-item"><a href="index.html" class="nav-link fs-5">INICIO</a></li>
+        <li class="nav-item"><a href="#" class="nav-link fs-5">PRODUCTOS</a></li>
+        <li class="nav-item"><a href="nosotros.html" class="nav-link fs-5">MELANIE MARTINEZ</a></li>
+        <li class="nav-item"><a href="contacto.html" class="nav-link fs-5">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
 
 
 
@@ -57,52 +62,53 @@
       <div id="contenedor-detalles" class="contenedor-detalles disabled">
         <!-- Se rellena en Java -->
         <div class="detalle-fondo">
-        <div class="detalle">
-          <a onclick="ocultarDetalle()" class="volver-detalle">Volver</a>
-          <img src="" id="detalle-imagen" class="detalle-imagen" alt="">
-          <div class="detalle-detalles">
-            <h5 id="detalle-titulo" class="detalle-titulo"></h5>
-            <p id="detalle-precio" class="detalle-precio"></p>
-            <p class="detalle-descp" id="detalle-descp"></p>
-            <div class="detalle-opciones-ropa disabled">
-              <input type="radio" name="ropa" id="talle-small" value="S" checked>
-              <label for="talle-small">S</label>
+          <div class="detalle">
+            <a onclick="ocultarDetalle()" class="volver-detalle">Volver</a>
+            <img src="" id="detalle-imagen" class="detalle-imagen" alt="">
+            <div class="detalle-detalles">
+              <h5 id="detalle-titulo" class="detalle-titulo"></h5>
+              <p id="detalle-precio" class="detalle-precio"></p>
+              <p class="detalle-descp" id="detalle-descp"></p>
+              <div class="detalle-opciones-ropa disabled">
+                <input type="radio" name="ropa" id="talle-small" value="S" checked>
+                <label for="talle-small">S</label>
 
-              <input type="radio" name="ropa" id="talle-medium" value="M">
-              <label for="talle-medium">M</label>
+                <input type="radio" name="ropa" id="talle-medium" value="M">
+                <label for="talle-medium">M</label>
 
-              <input type="radio" name="ropa" id="talle-large" value="L">
-              <label for="talle-large">L</label>
+                <input type="radio" name="ropa" id="talle-large" value="L">
+                <label for="talle-large">L</label>
 
-              <input type="radio" name="ropa" id="talle-xlarge" value="XL">
-              <label for="talle-xlarge">XL</label>
-            </div>
+                <input type="radio" name="ropa" id="talle-xlarge" value="XL">
+                <label for="talle-xlarge">XL</label>
+              </div>
 
-            <div class="detalle-opciones-acc disabled">
-              <input type="radio" name="acc" id="talle-10" value="10" checked>
-              <label for="talle-10">10</label>
+              <div class="detalle-opciones-acc disabled">
+                <input type="radio" name="acc" id="talle-10" value="10" checked>
+                <label for="talle-10">10</label>
 
-              <input type="radio" name="acc" id="talle-11" value="11">
-              <label for="talle-11">11</label>
+                <input type="radio" name="acc" id="talle-11" value="11">
+                <label for="talle-11">11</label>
 
-              <input type="radio" name="acc" id="talle-12" value="12">
-              <label for="talle-12">12</label>
+                <input type="radio" name="acc" id="talle-12" value="12">
+                <label for="talle-12">12</label>
 
-              <input type="radio" name="acc" id="talle-13" value="13">
-              <label for="talle-13">13</label>
-            </div>
-            <div class="detalle-agregar">
-              <button class="producto-agregar-detalle">Añadir</button>
+                <input type="radio" name="acc" id="talle-13" value="13">
+                <label for="talle-13">13</label>
+              </div>
+              <div class="detalle-agregar">
+                <button class="producto-agregar-detalle">Añadir</button>
+              </div>
             </div>
           </div>
-        </div></div>
+        </div>
       </div>
       <div id="contenedor-relacionado" class="relacionados border-top disabled">
-      <h4 class="titulo-relacionado">Relacionados</h4>
-      <div class="contenedor-relacionado" id="objetos-relacionados">
+        <h4 class="titulo-relacionado">Relacionados</h4>
+        <div class="contenedor-relacionado" id="objetos-relacionados">
           <!-- Se rellena en java -->
-      </div>
-      <!-- Fin producto detalle -->
+        </div>
+        <!-- Fin producto detalle -->
     </section>
   </main>
 

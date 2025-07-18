@@ -29,29 +29,9 @@ body {
 }
 
  /* Header */
-/* Añade transición suave al header y sus elementos */
-/* Asegura que el header tenga posicionamiento relativo para los pseudo-elementos */
-header {
+#cabecera {
     background-color: transparent;
-    transition: background-color 0.5s ease;
-    position: relative;
-}
-
-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-    z-index: -1;
-}
-
-header.scrolled::before {
-    opacity: 1;
+    position: static;
 }
 
 /* Logo y titulo configuracion inicial (blanco) */
@@ -93,63 +73,17 @@ header.scrolled::before {
     transition: opacity 0.5s ease;
 }
 
-/* Imagen negra nueva (usando ::after, inicialmente invisible) */
-#logo::after {
-    content: "";
-    background-image: url(recursos/images/logo_negro.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-#titulo::after {
-    content: "";
-    background-image: url(recursos/images/titulo_negro.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-/* Al scrollear intercambiamos opacidades */
-header.scrolled #logo::before,
-header.scrolled #titulo::before {
-    opacity: 0;
-}
-
-header.scrolled #logo::after,
-header.scrolled #titulo::after {
-    opacity: 1;
-}
-
-/* Navbar (no cambia, ya funciona bien) */
+/* Navbar */
 #nave ul li a {
     color: white;
     text-shadow: 0 0 20px #fff;
     transition: color 0.5s ease, text-shadow 0.5s ease;
 }
 
-header.scrolled #nave ul li a {
-    color: black;
-    text-shadow: none;
-}
-
 #nave ul li a:hover {
     transform: scale(1.2);
     transition: all 0.5s ease;
 }
-
 
 /* --- Main --- */
 #promocion {
@@ -650,8 +584,8 @@ footer ul li a svg path{
     color: #1D3B1B;
 }
 
-/* Carrito */
-#btnCarrito {
+/* Botón Subir */
+#btnSubir {
     position: fixed;
     bottom: 0; 
     right: 0; 
@@ -663,8 +597,42 @@ footer ul li a svg path{
     text-decoration: none;
     padding: 1rem;
     border-radius: 1rem;
-    font-size: 1.3rem;
     margin-bottom: 4rem;
+    margin-right: 5rem;
+    transition: .5s;
+  }
+
+  #btnSubir i {
+    color: #1D3B1B;
+    font-size: 1.3em;
+    transition: .5s;
+  }
+
+  #btnSubir:hover {
+    background-color: #1D3B1B;
+    transition: .5s;
+  }
+
+  #btnSubir:hover i{
+    color: white;
+    transition: .5s;
+  }
+
+/* Carrito */
+#btnCarrito {
+    position: fixed;
+    top: 0; 
+    right: 0; 
+    z-index: 1; 
+    border: none; 
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    margin-top: 6rem;
     margin-right: 5rem;
     transition: .5s;
   }
@@ -695,12 +663,6 @@ footer ul li a svg path{
   #btnCarrito:hover span{
     color: white;
     transition: .5s;
-  }
-
-  #cabecera {
-    position: sticky;
-    top: 0;
-    overflow: hidden;
   }
 
   /* Productos Carrito */
